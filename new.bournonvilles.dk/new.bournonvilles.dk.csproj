@@ -356,6 +356,9 @@
     <Content Include="Css\bootstrap-theme.min.css" />
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\customCss.css" />
+    <Content Include="Css\font-awesome.css" />
+    <Content Include="Css\font-awesome.min.css" />
     <Content Include="Css\richTextEditor.css" />
     <Content Include="default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -393,11 +396,15 @@
     <Content Include="media\Images\safe_image.php.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\cbpAnimatedHeader.js" />
+    <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\navBar.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\Page.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
