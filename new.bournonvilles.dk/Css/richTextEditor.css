@@ -1,0 +1,43 @@
+﻿/**umb_name:Header*/
+h1 {
+    font-family: 'RosewoodStd-Regular';
+    font-size: 2.2rem;
+}
+@font-face {
+    font-family: 'RosewoodStd-Regular';
+    src: url('../fonts/RosewoodStd-Regular.otf') format('opentype');
+}
+/**umb_name:HeaderSmall*/
+h2 {
+    font-family: 'RosewoodStd-Regular';
+    font-size: 1.6rem;
+}
+@font-face {
+    font-family: 'RosewoodStd-Regular';
+    src: url('../fonts/RosewoodStd-Regular.otf') format('opentype');
+}
+/**umb_name:HeadLine*/
+h3 {
+    font-family: 'MesquiteStd';
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+}
+@font-face {
+    font-family: 'MesquiteStd';
+    src: url('../fonts/MesquiteStd.otf') format('opentype');
+}
+/**umb_name:Paragraph*/
+p {
+    font-family: 'verdana';
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('../fonts/verdana.ttf') format('truetype');
+}
+/**umb_name:TextRed*/
+.redText{
+	color: darkred;
+}
+/**umb_name:Italic*/
+/**umb_name:Bold*/
+/**umb_name:Italic-Bold*/

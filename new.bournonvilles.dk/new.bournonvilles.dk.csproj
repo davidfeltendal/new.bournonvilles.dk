@@ -356,6 +356,7 @@
     <Content Include="Css\bootstrap-theme.min.css" />
     <Content Include="Css\bootstrap.css" />
     <Content Include="Css\bootstrap.min.css" />
+    <Content Include="Css\richTextEditor.css" />
     <Content Include="default.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -367,16 +368,41 @@
     <Content Include="Css\bootstrap.css.map" />
     <Content Include="Css\bootstrap-theme.min.css.map" />
     <Content Include="Css\bootstrap-theme.css.map" />
+    <Content Include="fonts\ANDERSON FOUR FEATHER FALLS.TTF" />
+    <Content Include="fonts\ANDERSON THUNDERBIRDS ARE GO!.TTF" />
+    <Content Include="fonts\BLEEDING COWBOYS.TTF" />
+    <Content Include="fonts\MesquiteStd.otf" />
+    <Content Include="fonts\RosewoodStd-Regular.otf" />
+    <Content Include="fonts\verdana.ttf" />
+    <Content Include="fonts\verdanab.ttf" />
+    <Content Include="fonts\verdanai.ttf" />
+    <Content Include="fonts\verdanaz.ttf" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="media\Images\background_xwide.jpg" />
+    <Content Include="media\Images\booking.png" />
+    <Content Include="media\Images\cowboyfest.png" />
+    <Content Include="media\Images\facebook.png" />
+    <Content Include="media\Images\favicon.ico" />
+    <Content Include="media\Images\hand.png" />
+    <Content Include="media\Images\kontrol_raport.gif" />
+    <Content Include="media\Images\latestnews-events.png" />
+    <Content Include="media\Images\logoTransparant_black_sm.png" />
+    <Content Include="media\Images\logoTransparant_white.png" />
+    <Content Include="media\Images\logoTransparant_white_sm.png" />
+    <Content Include="media\Images\referencer.png" />
+    <Content Include="media\Images\safe_image.php.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Master.cshtml" />
+    <Content Include="Views\Home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
