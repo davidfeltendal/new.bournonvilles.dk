@@ -380,6 +380,7 @@
     <Content Include="fonts\verdanab.ttf" />
     <Content Include="fonts\verdanai.ttf" />
     <Content Include="fonts\verdanaz.ttf" />
+    <None Include="Properties\PublishProfiles\new.bournonvilles.dk.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="media\Images\background_xwide.jpg" />
     <Content Include="media\Images\booking.png" />
