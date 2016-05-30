@@ -1,54 +1,56 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
     Layout = "Master.cshtml";
-}<body>
-    <section class="row">
-        <div id="carousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel" data-slide-to="1"></li>
-                <li data-target="#carousel" data-slide-to="2"></li>
-                <li data-target="#carousel" data-slide-to="3"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <a href="#home"><img src="~/media/Carusel/front.jpg" alt="Front" /></a>
-                    <div class="carousel-caption">
-                        <h3></h3>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="item">
-                    <a href="~/cowboy-fest/the-buffalos/"><img src="~/media/Carusel/enSjovAften.jpg" alt="En Sjov Aften" /></a>
-                </div>
-                <div class="item">
-                    <a href="https://www.facebook.com/events/1105400149518614/"><img src="~/media/Carusel/sankthans.jpg" alt="Sankt Hans Aften" /></a>
-                </div>
-                <div class="item">
-                    <a href="~/menu-kort/"><img src="~/media/Images/safe_image.php.png" alt="Cowboy Grill & Saloon - Menu" /></a>
+}
+<body>
+    <section id="top-banner">
+        <div></div>
+    </section>
+<section class="row">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target="#carousel" data-slide-to="3"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="@CurrentPage.campainUrl1"><img src="@Umbraco.Media(CurrentPage.campainImage1).Url" alt="@CurrentPage.campain1Text"/></a>
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
                 </div>
             </div>
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <div class="item">
+                <a href="@CurrentPage.campainUrl2"><img src="@Umbraco.Media(CurrentPage.campainImage2).Url" alt="@CurrentPage.campain2Text"/></a>
+            </div>
+            <div class="item">
+                <a href="@CurrentPage.campainUrl3"><img src="@Umbraco.Media(CurrentPage.campainImage3).Url" alt="@CurrentPage.campain3Text"/></a>
+            </div>
+            <div class="item">
+                <a href="@CurrentPage.campainUrl4"><img src="@Umbraco.Media(CurrentPage.campainImage4).Url" alt="@CurrentPage.campain4Text"/></a>
+            </div>
         </div>
-    </section>
-    <section id="bottom-banner">
-        <div class="down-button" align="center">
-            <a class="btn" href="#home">
-                <span class="fa fa-chevron-circle-down fa-4x"></span>
-            </a>
-        </div>
-    </section>
-    <section id="home">
-        @CurrentPage.GetGridHtml("homeGrid")
-    </section>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+<section id="bottom-banner">
+    <div align="center"><a  href="#home">
+    <span class="fa-align-center fa-chevron-down" aria-hidden="true"></span>
+</a></div>
+</section>
+<section id="home" class="content">
+    @CurrentPage.GetGridHtml("homeGrid")
+</section>
 </body>

@@ -2,3 +2,8 @@
 @{
     Layout = "Master.cshtml";
 }
+<body>
+<section class="content">
+    @CurrentPage.GetGridHtml("contentGrid")
+</section>
+</body>
