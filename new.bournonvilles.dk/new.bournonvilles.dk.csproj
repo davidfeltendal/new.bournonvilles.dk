@@ -553,6 +553,7 @@
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="media\1045\priser_tilvalg_saloon.pdf" />
     <Content Include="media\1046\priser_tilvalg_ud_af_huset.pdf" />
+    <Content Include="Views\NewsFacebook.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

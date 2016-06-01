@@ -196,3 +196,12 @@ footer p{
 .grid-section a {
     color: #3f0f0f;
 }
+.fb-news-section {
+    display: block;
+    margin: auto;
+    padding-left: 140px;
+    padding-right: 25px;
+}
+.fb-section {
+    padding-right: -50px;
+}
