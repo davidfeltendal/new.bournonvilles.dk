@@ -205,3 +205,8 @@ footer p{
 .fb-section {
     padding-right: -50px;
 }
+form {
+    display: block;
+    margin: auto;
+    width: 90%;
+}

@@ -1,0 +1,76 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "Master.cshtml";
+}
+@{
+    var errorMessage = "";
+    if (IsPost)
+    {
+        var toEmail = "e-david@live.dk";
+        var fromEmail = Request["emailFrom"];
+        var subject = Request["subjectFrom"];
+        var message = Request["messageFrom"];
+
+        try
+        {
+            WebMail.SmtpServer = "smtp.gmail.dk";
+            WebMail.SmtpPort = 465;
+            WebMail.EnableSsl = true;
+            WebMail.UserName = "davidfeltendal@gmail.com";
+            WebMail.Password = "Thea070306";
+            WebMail.From = fromEmail;
+            WebMail.Send(to: toEmail,
+                subject: "Borunonvilles.dk - " + subject,
+                body: message);
+
+        }
+        catch (Exception e)
+        {
+            errorMessage = e.Message;
+        }
+    }
+}
+@if (errorMessage != "")
+{
+    <div>Error: @errorMessage</div>
+    <div>Error:  </div>
+}
+<body>
+<section class="content">
+    @CurrentPage.GetGridHtml("headlineGrid")
+</section>
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <form name="contactForm" class="form-group" method="Post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nameFrom">Navn:</label><br />
+                        <input type="text" name="nameFrom" class="form-control" id="nameFrom" placeholder="Skriv dit navn" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="emailFrom">Email:</label><br />
+                        <input type="email" name="emailFrom" class="form-control" id="emailFrom" placeholder="Skriv din email adresse" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <label for="subjectFrom">Emne:</label><br />
+                        <input type="text" name="subjectFrom" class="form-control" id="subjectFrom" placeholder="Hvad handler beskeden om?" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageFrom">Besked:</label><br />
+                        <textarea name="messageFrom" class="form-control" rows="5" id="messageFrom" placeholder="Skriv din besked her" required="required"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input class="btn btn-default" type="submit" value="Send Besked">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<section class="content">
+    <div class="container-fluid">
+        <div class="container">
+            @CurrentPage.GetGridHtml("buttomGrid")
+        </div>
+    </div>
+</section>
+</body>

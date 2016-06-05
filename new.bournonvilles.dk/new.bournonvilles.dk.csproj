@@ -523,7 +523,9 @@
     <Content Include="media\1117\phoca_thumb_l_showevent41_thumb.jpg" />
     <Content Include="media\1118\phoca_thumb_l_showevent14.jpg" />
     <Content Include="media\1118\phoca_thumb_l_showevent14_thumb.jpg" />
+    <Content Include="media\Images\send_btn.png" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\formValidator.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -554,6 +556,7 @@
     <Content Include="media\1045\priser_tilvalg_saloon.pdf" />
     <Content Include="media\1046\priser_tilvalg_ud_af_huset.pdf" />
     <Content Include="Views\NewsFacebook.cshtml" />
+    <Content Include="Views\ContactPage.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -630,7 +633,6 @@
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Scripts\navBar.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Home.cshtml" />
