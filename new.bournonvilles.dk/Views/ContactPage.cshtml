@@ -7,21 +7,23 @@
     if (IsPost)
     {
         var toEmail = "e-david@live.dk";
-        var fromEmail = Request["emailFrom"];
-        var subject = Request["subjectFrom"];
-        var message = Request["messageFrom"];
+        var fromName = Request["name"];
+        var fromEmail = Request["email"];
+        var subject = Request["subject"];
+        var message = Request["message"];
 
         try
         {
-            WebMail.SmtpServer = System.Configuration.ConfigurationManager.AppSettings["host"];
-            WebMail.SmtpPort = 587;
+            WebMail.SmtpServer = "asmtp.danhost.dk";//System.Configuration.ConfigurationManager.AppSettings["host"];//
+            WebMail.SmtpPort = 25;//587;
             WebMail.EnableSsl = true;
-            WebMail.UserName = System.Configuration.ConfigurationManager.AppSettings["userName"];
-            WebMail.Password = System.Configuration.ConfigurationManager.AppSettings["password"];
+            WebMail.UserName = "noreply@bournonvilles.dk";//System.Configuration.ConfigurationManager.AppSettings["userName"];//
+            WebMail.Password = "Kk10991099";//System.Configuration.ConfigurationManager.AppSettings["password"];//
             WebMail.From = fromEmail;
             WebMail.Send(to: toEmail,
                 subject: "Borunonvilles.dk - " + subject,
-                body: message);
+                body: "From: "+ fromName 
+                              + message);
 
         }
         catch (Exception e)
@@ -33,7 +35,6 @@
 @if (errorMessage != "")
 {
     <div>Error: @errorMessage</div>
-    <div>Error:  </div>
 }
 <body>
 <section class="content">
@@ -42,22 +43,22 @@
     <section>
         <div class="container-fluid">
             <div class="container">
-                <form name="contactForm" class="form-group" method="Post" enctype="text/plain">
+                <form name="contactForm" class="form-group" method="POST" enctype="text/plain">
                     <div class="form-group">
                         <label for="nameFrom">Navn:</label><br />
-                        <input type="text" name="nameFrom" class="form-control" id="nameFrom" placeholder="Skriv dit navn" required="required" />
+                        <input type="text" name="name" class="form-control" id="nameFrom" placeholder="Skriv dit navn" required="required" />
                     </div>
                     <div class="form-group">
                         <label for="emailFrom">Email:</label><br />
-                        <input type="email" name="emailFrom" class="form-control" id="emailFrom" placeholder="Skriv din email adresse" required="required" />
+                        <input type="email" name="email" class="form-control" id="emailFrom" placeholder="Skriv din email adresse" required="required" />
                     </div>
                     <div class="form-group">
                         <label for="subjectFrom">Emne:</label><br />
-                        <input type="text" name="subjectFrom" class="form-control" id="subjectFrom" placeholder="Hvad handler beskeden om?" required="required"/>
+                        <input type="text" name="subject" class="form-control" id="subjectFrom" placeholder="Hvad handler beskeden om?" required="required"/>
                     </div>
                     <div class="form-group">
                         <label for="messageFrom">Besked:</label><br />
-                        <textarea name="messageFrom" class="form-control" rows="5" id="messageFrom" placeholder="Skriv din besked her" required="required"></textarea>
+                        <textarea type="text" name="message" class="form-control" rows="6" id="messageFrom" placeholder="Skriv din besked her" required="required"></textarea>
                     </div>
                     <div class="form-group">
                         <input class="btn btn-default" type="submit" value="Send Besked">
