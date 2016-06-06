@@ -13,11 +13,11 @@
 
         try
         {
-            WebMail.SmtpServer = "smtp.gmail.dk";
-            WebMail.SmtpPort = 465;
+            WebMail.SmtpServer = System.Configuration.ConfigurationManager.AppSettings["host"];
+            WebMail.SmtpPort = 587;
             WebMail.EnableSsl = true;
-            WebMail.UserName = "davidfeltendal@gmail.com";
-            WebMail.Password = "Thea070306";
+            WebMail.UserName = System.Configuration.ConfigurationManager.AppSettings["userName"];
+            WebMail.Password = System.Configuration.ConfigurationManager.AppSettings["password"];
             WebMail.From = fromEmail;
             WebMail.Send(to: toEmail,
                 subject: "Borunonvilles.dk - " + subject,
