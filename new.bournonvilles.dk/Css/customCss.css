@@ -10,13 +10,14 @@ body {
 .img-responsive {
     margin: 0px auto;
 }
-.h1 {
-    color: #220B0A;
-    font-family: 'RosewoodStd-Regular';
-}
+
 @font-face {
     font-family: 'RosewoodStd-Regular';
     src: url('../fonts/RosewoodStd-Regular.otf') format('opentype');
+}
+.h1 {
+    color: #220B0A;
+    font-family: 'RosewoodStd-Regular';
 }
 .h2 {
     color: #220B0A;
