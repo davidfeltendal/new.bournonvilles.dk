@@ -11,13 +11,14 @@ body {
     margin: 0px auto;
 }
 
-@font-face {
-    font-family: 'RosewoodStd-Regular';
-    src: url('../fonts/RosewoodStd-Regular.otf') format('opentype');
-}
+
 .h1 {
     color: #220B0A;
-    font-family: 'RosewoodStd-Regular';
+    font-family: 'Rosewood';
+}
+@font-face {
+    font-family: 'Rosewood';
+    src: url('../fonts/Rosewood.ttf') format('truetype');
 }
 .h2 {
     color: #220B0A;

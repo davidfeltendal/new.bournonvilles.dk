@@ -643,6 +643,7 @@
     <Content Include="Views\NewsFacebook.cshtml" />
     <Content Include="Views\ContactPage.cshtml" />
     <Content Include="media\1122\cowboyfest-inspirationsmateriale.pdf" />
+    <Content Include="fonts\Rosewood.ttf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
