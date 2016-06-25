@@ -297,6 +297,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\font\nano_icon_font3.svg" />
+    <Content Include="Css\nanogallery.min.css" />
     <Content Include="media\1001\kids-menu.png" />
     <Content Include="media\1002\logo_farve.png" />
     <Content Include="media\1002\logo_farve_thumb.jpg" />
@@ -611,6 +613,8 @@
     <Content Include="media\1181\saelland-kort_thumb.jpg" />
     <Content Include="media\Images\send_btn.png" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\jquery.nanogallery.min.js" />
+    <Content Include="Scripts\nanoGallery.js" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -644,6 +648,10 @@
     <Content Include="Views\ContactPage.cshtml" />
     <Content Include="media\1122\cowboyfest-inspirationsmateriale.pdf" />
     <Content Include="fonts\Rosewood.ttf" />
+    <Content Include="Views\GalleryPage.cshtml" />
+    <Content Include="Css\font\nano_icon_font3.eot" />
+    <Content Include="Css\font\nano_icon_font3.ttf" />
+    <Content Include="Css\font\nano_icon_font3.woff" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -720,7 +728,9 @@
     <Content Include="Scripts\classie.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\Master.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\Page.cshtml" />
