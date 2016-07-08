@@ -188,15 +188,31 @@ footer p{
 .grid-section h1 {
     color: #3f0f0f;
     font-size: 48px;
-    font-family: 'RosewoodStd-Regular';
+    font-family: 'Rosewood';
     padding-left: 50px;
 }
 @font-face {
-    font-family: 'RosewoodStd-Regular';
-    src: url('../fonts/RosewoodStd-Regular.otf') format('opentype');
+    font-family: 'Rosewood';
+    src: url('../fonts/Rosewood.ttf') format('truetype');
 }
 .grid-section a {
     color: #3f0f0f;
+}
+.grid-section h4 {
+    size: 16px;
+    font-family: 'verdana';
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('../fonts/verdana.ttf') format('truetype');
+}
+.grid-section p {
+    size: 16px;
+    font-family: 'verdana';
+}
+@font-face {
+    font-family: 'verdana';
+    src: url('../fonts/verdana.ttf') format('truetype');
 }
 .fb-news-section {
     display: block;
